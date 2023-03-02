@@ -4,6 +4,7 @@ resource "aws_s3_bucket" "harness_demo" {
   tags = {
     Name        = "${var.tag}"
     Environment = "Demo"
+    CostCenter  = "Test"
   }
 }
 
